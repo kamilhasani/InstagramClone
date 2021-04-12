@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_view"
+    android:layout_width="wrap_content"
+    android:layout_margin="15dp"
+    app:cardCornerRadius="8dp"
+    android:layout_height="wrap_content"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="30dp">
+
+        <ImageView
+            android:id="@+id/image_in_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/username_in_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Username"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/image_in_search"
+            app:layout_constraintStart_toStartOf="@+id/image_in_search"
+            app:layout_constraintTop_toBottomOf="@+id/image_in_search" />
+
+        <TextView
+            android:id="@+id/nama_in_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Nama"
+            app:layout_constraintEnd_toEndOf="@+id/username_in_search"
+            app:layout_constraintStart_toStartOf="@+id/username_in_search"
+            app:layout_constraintTop_toBottomOf="@+id/username_in_search" />
+
+        <Button
+            android:id="@+id/btnFllw_in_srch"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="100dp"
+            android:letterSpacing="0"
+            android:text="Follow"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="@+id/image_in_search"
+            app:layout_constraintStart_toStartOf="@+id/image_in_search"
+            app:layout_constraintTop_toBottomOf="@+id/nama_in_search" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>
